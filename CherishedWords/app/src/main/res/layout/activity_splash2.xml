@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".splash2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:src="@drawable/possible" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="262dp"
+        android:background="@drawable/orangetexture"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="Please type your name"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCon"
+        android:layout_width="127dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="casual"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/notificationNum"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="171dp"
+        android:background="@drawable/orangetexture"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="How many Quotes you would like to read on daily basis?"
+        android:textColorHint="@color/black"
+        android:textSize="13dp"
+
+        android:textStyle="bold" />
+
+</RelativeLayout>
