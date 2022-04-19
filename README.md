@@ -2,7 +2,9 @@
 Final Project - Americans University of Afghanistan 
 ### Scrum Project Managment Framework
 
-Salutations everyone, This project is an android mobile application (Java- Andriod Studio) that provides daily motivational quotes! We have used Java programming language and the project is for the purpose of practicing Scrum method of project managment.
+Salutations everyone,
+
+This project is an android mobile application (Java- Andriod Studio) that provides daily motivational quotes! We have used Java programming language and the project is for the purpose of practicing Scrum method of project managment.
  
  ### Group members:
  
