@@ -5,56 +5,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_5"
+    android:background="@drawable/background"
     tools:context=".dashboard"
     >
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/img_5"
-    >
-
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="39dp"
-        android:fontFamily="casual"
-        android:gravity="center"
-        android:text=" D A S H B O A R D"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        >
 
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardStu"
-        android:layout_width="263dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="162dp"
-        android:backgroundTint="@color/white">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_marginTop="80dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="39dp"
             android:fontFamily="casual"
             android:gravity="center"
-            android:text=" Student life"
+            android:text=" D A S H B O A R D"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="35dp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="253dp"
-            android:layout_height="100dp"
-            android:src="@drawable/stu" />
-    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStu"
+            android:layout_width="263dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="162dp"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text=" Student life"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="253dp"
+                android:layout_height="100dp"
+                android:src="@drawable/stu" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardlife"
@@ -83,58 +83,58 @@
                 android:src="@drawable/life" />
         </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardgym"
-        android:layout_width="263dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="558dp"
-        android:layout_marginEnd="80dp"
-        android:backgroundTint="@color/white">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardgym"
+            android:layout_width="263dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="558dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/white">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_marginTop="80dp"
-            android:fontFamily="casual"
-            android:gravity="center"
-            android:text="Gym Motivation"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Gym Motivation"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="274dp"
-            android:layout_height="90dp"
-            android:src="@drawable/gym" />
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="274dp"
+                android:layout_height="90dp"
+                android:src="@drawable/gym" />
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
-        android:layout_width="263dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="758dp"
-        android:layout_marginEnd="80dp"
-        android:backgroundTint="@color/white">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="263dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="758dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/white">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="77dp"
-            android:layout_marginTop="80dp"
-            android:fontFamily="casual"
-            android:gravity="center"
-            android:text="."
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="274dp"
-            android:layout_height="90dp" />
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="274dp"
+                android:layout_height="90dp" />
+        </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+    </RelativeLayout>
 </ScrollView>
