@@ -8,8 +8,8 @@ This project is an android mobile application (Java- Andriod Studio) that provid
  
  ### Group members:
  
-- Emran Mohammad Noori : Product Owner
-- Elham Wardak: Scrum Master
+- Mohammad Emran Noori : Product Owner
+- Ahmad Elham Wardak: Scrum Master
 - Seyar Daqiq: Development team
 - Husnia Sultani : Development Team
 - Hadia Haded Mubashir: Development Team
