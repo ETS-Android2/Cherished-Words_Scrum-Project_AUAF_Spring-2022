@@ -27,7 +27,6 @@ public class Relationship extends AppCompatActivity {
         setContentView(R.layout.activity_relationship);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Relationship");
-        actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         relationshippagecurlview = (PageCurlView) findViewById(R.id.rltnshpimgs);

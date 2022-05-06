@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CherishedWordsApp">
         <activity
+            android:name=".Help"
+            android:exported="false"
+            android:parentActivityName=".dashboard2"/>
+        <activity
+            android:name=".splash2"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".thesetting"
+            android:exported="false"
+            android:parentActivityName=".dashboard2" />
+        <activity
             android:name=".StayFocused"
             android:exported="false"
             android:parentActivityName=".dashboard2" />

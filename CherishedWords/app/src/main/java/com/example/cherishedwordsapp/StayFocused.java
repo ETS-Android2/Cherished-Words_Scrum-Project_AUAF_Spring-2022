@@ -3,11 +3,16 @@ package com.example.cherishedwordsapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.WindowManager;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,16 +29,13 @@ public class StayFocused extends AppCompatActivity {
         setContentView(R.layout.activity_stay_focused);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Stay Focused");
-        actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         focuspagecurlview = (PageCurlView) findViewById(R.id.focuspagecurlview);
         focusimgs = new ArrayList<>();
 
-        focusimgs.add(R.drawable.focus1);
-        focusimgs.add(R.drawable.focus2);
-        focusimgs.add(R.drawable.focus3);
-        focusimgs.add(R.drawable.focus4);
-        focusimgs.add(R.drawable.focus5);
+        focusimgs.add(R.drawable.focus6);
+        focusimgs.add(R.drawable.focus7);
+        focusimgs.add(R.drawable.focus8);
 
         focuspagecurlview.setCurlView(focusimgs);
         focuspagecurlview.setCurlSpeed(665);
@@ -43,5 +45,22 @@ public class StayFocused extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu2, menu);
         return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_share:
+                ApplicationInfo applicationInfo = getApplicationContext().getApplicationInfo();
+                String apkpath = applicationInfo.sourceDir;
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("application/vnd.android.package-archive");
+                intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apkpath)));
+                startActivity(Intent.createChooser(intent, "ShareVia"));
+                return true;
+            case R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

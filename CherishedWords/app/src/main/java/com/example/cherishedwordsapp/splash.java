@@ -11,7 +11,6 @@ import android.widget.EditText;
 
 public class splash extends AppCompatActivity {
         Button btnc;
-
         EditText name,notifnum;
 
         @Override
@@ -20,15 +19,15 @@ public class splash extends AppCompatActivity {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setContentView(R.layout.activity_splash);
 
-            name = findViewById(R.id.userName);
-            notifnum = findViewById(R.id.notificationNum);
+            name = findViewById(R.id.uName);
+            notifnum = findViewById(R.id.notifNum);
 
-            btnc = findViewById(R.id.btnCon);
+            btnc = findViewById(R.id.btnC);
 
             btnc.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent2 = new Intent (splash.this, dashboard2.class);
+                    Intent intent2 = new Intent (splash.this, thesetting.class);
                     startActivity(intent2);
                 }
             });

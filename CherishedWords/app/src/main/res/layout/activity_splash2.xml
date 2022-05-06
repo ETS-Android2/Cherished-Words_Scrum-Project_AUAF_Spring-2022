@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange2"
-    tools:context=".splash">
+    android:background="@color/white"
+    tools:context=".splash2">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="275dp"
-        android:src="@drawable/possible" />
+        android:layout_height="301dp"
+        android:src="@drawable/staypositive" />
 
     <EditText
-        android:id="@+id/uName"
+        android:id="@+id/userName"
         android:layout_width="332dp"
         android:layout_height="64dp"
         android:layout_alignParentStart="true"
@@ -21,23 +21,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="37dp"
         android:layout_marginBottom="262dp"
-        android:background="@color/white"
+        android:background="@color/pink"
         android:fontFamily="casual"
         android:gravity="center"
-        android:hint="Please type your name"
+        android:hint="Name"
         android:textColorHint="@color/black"
-
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnC"
-        android:layout_width="127dp"
-        android:layout_height="61dp"
+        android:id="@+id/btnCon"
+        android:layout_width="151dp"
+        android:layout_height="67dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginBottom="49dp"
-        android:backgroundTint="@color/orange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="@color/white"
         android:fontFamily="casual"
         android:text="Continue"
         android:textAllCaps="false"
@@ -45,7 +45,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/notifNum"
+        android:id="@+id/notificationNum"
         android:layout_width="332dp"
         android:layout_height="64dp"
         android:layout_alignParentStart="true"
@@ -53,12 +53,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="35dp"
         android:layout_marginBottom="171dp"
-        android:background="@color/white"
+        android:background="@color/pink"
         android:fontFamily="casual"
         android:gravity="center"
-        android:hint="How many Quotes you would like to read on daily basis?"
+        android:hint="Number of notifications?"
         android:textColorHint="@color/black"
-        android:textSize="13dp"
+        android:textSize="15dp"
 
         android:textStyle="bold" />
 

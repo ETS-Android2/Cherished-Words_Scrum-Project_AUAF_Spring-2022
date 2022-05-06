@@ -14,4 +14,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <!--<style name="threeDotsColor" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="tint">@color/black</item>
+    </style>-->
 </resources>

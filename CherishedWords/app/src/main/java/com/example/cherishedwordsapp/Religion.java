@@ -3,11 +3,16 @@ package com.example.cherishedwordsapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.WindowManager;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,16 +29,13 @@ public class Religion extends AppCompatActivity {
         setContentView(R.layout.activity_religion);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Religion");
-        actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         religionpagecurlview = (PageCurlView) findViewById(R.id.religionpagecurlview);
         religionimgs = new ArrayList<>();
 
-        religionimgs.add(R.drawable.religion1);
-        religionimgs.add(R.drawable.religion2);
-        religionimgs.add(R.drawable.religion3);
-        religionimgs.add(R.drawable.religion4);
-        religionimgs.add(R.drawable.religion5);
+        religionimgs.add(R.drawable.religion6);
+        religionimgs.add(R.drawable.religion7);
+        religionimgs.add(R.drawable.religion8);
 
         religionpagecurlview.setCurlView(religionimgs);
         religionpagecurlview.setCurlSpeed(665);
@@ -43,5 +45,22 @@ public class Religion extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu2, menu);
         return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_share:
+                ApplicationInfo applicationInfo = getApplicationContext().getApplicationInfo();
+                String apkpath = applicationInfo.sourceDir;
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("application/vnd.android.package-archive");
+                intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apkpath)));
+                startActivity(Intent.createChooser(intent, "ShareVia"));
+                return true;
+            case R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
